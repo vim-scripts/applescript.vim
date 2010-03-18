@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:    AppleScript
 " Maintainer:  Jim Eberle <jim.eberle@fastnlight.com>
-" Last Change: Dec 12, 2006
+" Last Change: Mar 18, 2010
 " URL:         http://www.fastnlight.com/syntax/applescript.vim
 
 " Use :syn w/in a buffer to see language element breakdown
@@ -233,6 +233,7 @@ hi def link scptUnitMT scptKey
 
 " --- Comment ---
 syn match   scptComment "--.*"
+syn match   scptComment "#.*"
 syn region  scptComment start="(\*" end="\*)"
 hi def link scptComment Comment
 
